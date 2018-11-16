@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2e2f41"
+    tools:context=".News_FeedActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="All News"
+                android:letterSpacing="0.0425"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/myviewpager1"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="35.7dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28.8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28.8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="13dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/the_verge_logo_svg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/sf_pro_display_medium"
+                        android:text="TheVerge"
+                        android:letterSpacing="0.0625"
+                        android:textColor="#a0a5b5"
+                        android:textSize="14.4sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/sf_pro_display_medium"
+                        android:text="2h ago"
+                        android:letterSpacing="0.0625"
+                        android:textColor="#a0a5b5"
+                        android:textSize="14.4sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28.2dp"
+                    android:fontFamily="@font/sf_pro_display_heavy"
+                    android:lineSpacingExtra="7.5dp"
+                    android:textAlignment="center"
+                    android:paddingRight="10dp"
+                    android:text="No, staring at a screen\nwon’t damage your eyes"
+                    android:textColor="@color/white"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28.7dp"
+                    android:layout_marginBottom="25dp"
+                    android:fontFamily="@font/sf_pro_display_regular"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/i_m_here_to_quell_your_health_concerns_staring_at_a_screen_doesn_t_damage_your_eyes_they_won_t_make_you_go_blind_and_your_doctor_isn_t_going_to_worry_about_your_health_if_he_or_she_hears_that_you_re_spending_a_lot_of_time_in_front_of_them_however_you_might_feel_uncomfortable_after_a_long_time_in_front_of_a_backlight_and_you_might_even_experience_the_symptoms_of_computer_vision_syndrome_a_fancy_name_for_the_eye_strain_and_discomfort_monitors_can_cause"
+                    android:textColor="#a0a5b5"
+                    android:textSize="15.3sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

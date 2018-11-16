@@ -1,0 +1,34 @@
+package com.example.vaibhav.news_feed;
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.util.AttributeSet;
+import android.widget.LinearLayout;
+
+
+public class CarouselLinearLayout1 extends LinearLayout {
+    private float scale = CarouselPagerAdapter1.BIG_SCALE;
+
+    public CarouselLinearLayout1(Context context, AttributeSet attrs) {
+        super(context, attrs);
+    }
+
+    public CarouselLinearLayout1(Context context) {
+        super(context);
+    }
+
+    public void setScaleBoth(float scale) {
+        this.scale = scale;
+        this.invalidate();
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+
+        // The main mechanism to display scale animation, you can customize it as your needs
+        int w = this.getWidth();
+        int h = this.getHeight();
+        canvas.scale(scale, scale, w/2, h/2);
+    }
+}
